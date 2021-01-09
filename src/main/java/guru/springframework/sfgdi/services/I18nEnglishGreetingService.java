@@ -2,11 +2,12 @@ package guru.springframework.sfgdi.services;
 
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
-@Profile({"ES","default"})
+@Profile("EN")
 @Service("i18nService")
-public class I18SpanishGreetingService implements GreetingService{
+public class I18nEnglishGreetingService implements GreetingService{
+
 
     public String sayGreeting() {
-        return "Hola Mundo -ES";
+        return "Hello World! -EM";
     }
 }
